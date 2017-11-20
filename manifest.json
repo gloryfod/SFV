@@ -1,0 +1,30 @@
+{
+   "author": "蚊兄&澳打君",
+   "background": {
+      "scripts": [ "jquery-1.7.1.min.js", "bg.js" ]
+   },
+   "browser_action": {
+      "default_icon": "images/icon.png",
+      "default_popup": "popup.html",
+      "default_title": "大X插件多用版"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "jquery-1.7.1.min.js", "js/md5/md5.min.js", "prevent_default.js", "content_script.js" ],
+      "matches": [ "https://www.visaservices.org.in/*", "https://www.visaservices.in/*", "file:///Users/Dan/Desktop/SFVForms-master/*", "http://www.australiavisa-china.com/*", "http://www.vfsglobal.com/*", "http://www.vfsglobal.cn/*", "https://visaservicesonline.vfsglobal.com/*", "https://www.vfsvisaonline.com/*", "https://onlineservices.immigration.govt.nz/*", "https://www.immigration.govt.nz/*", "https://online.vfsglobal.com/*", "http://moni.chinawhver.com/*" ,"https://webcomm.paymark.co.nz/*"]
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'; connect-src 'self' data https://www.naoqianbao.net http://www.naoqianbao.net;",
+   "description": "打工度假/银蕨签证大X插件(纽澳多用版)，自动点击，自动填表。点击下面的【选项】进行配置。",
+   "icons": {
+      "19": "images/icon.png",
+      "32": "images/icon32.png",
+      "38": "images/icon38.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4Vzupqhb+rv15/UzNFJkZ3FqbdqhI8x2crootL1OB4iMoIWaAnkmQw71fX+G0qq5ccsmDa5tRU9Ie7L2QEUmhlLgsmyQKJW/pOSGZUfyZ/oadtZ71AVcXUmGp9mXbBpZQwEjvTXWnWHAbFUjRd6k6h4Gx8X1AnJ8V7iNa7kXf4PN+Q0QHmPtgrfO3ceYOmlRHgb5cigwPIWspR1BmG5k+lezS6BMo14tzEXKPDf4VIgS0S6FPcshUGmAbOZyeJdF7U0aN7YMssSzg61Q55ZTH60rrXULJN4NrsmejNyufLGSi6+ZI5h5sP9mqeE4QggeyYcyYcSHTKKU9jD0SrYKpQIDAQAB",
+   "manifest_version": 2,
+   "name": "大X插件多用版",
+   "options_page": "options.html",
+   "permissions": [ "storage", "tabs", "https://*.visaservices.org.in/", "https://onlineservices.immigration.govt.nz/*", "https://www.immigration.govt.nz/*", "https://*.visaservices.in/", "http://www.vfsglobal.com/*", "http://www.vfsglobal.cn/", "https://online.vfsglobal.com/*", "https://visaservicesonline.vfsglobal.com/", "https://www.vfsvisaonline.com/", "https://www.nao.net/*", "*://www.naoqianbao.net/*", "http://moni.chinawhver.com/*" ],
+   "version": "2.3"
+}    

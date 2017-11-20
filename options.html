@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>设置</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="js/jquery_ui/jquery-ui.min.css">
+	<style type="text/css">
+		body{line-height: 190%;font-size: 13px;background-color: #fff;}
+		code{ font-family: "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif; color: #c7254e;white-space: nowrap;background-color: #f9f2f4;border-radius: 4px; padding:0 2px;}
+		td{width:150px;text-align:left}
+		table{boder:1px solid yellow;}
+		input, select{width:168px;}
+		input{ border-radius: 3px; height: 20px; border: 1px solid gray; color:#008000; font-weight: bold;}
+		select,option{cursor:pointer; color:#008000;}
+		button{cursor:pointer;border-radius: 3px; border: 1px solid gray;}
+		/*a#link_buy{color:gray;}*/
+		a#link_buy:link{color:gray;text-decoration: underline;}
+		a#link_buy:visited{color:red;text-decoration: underline;}
+		a#link_buy:hover{color:red;text-decoration: underline;}
+		a#link_buy:active{color:red;text-decoration: underline;}
+		.strong{font-weight: bold}
+		.info{font-size:14px; margin-bottom: 5px;}
+		#container{padding:0;}
+		.i18n_options{font-size: 2em;line-height:32px;font-weight:bold;display: inline;margin:0 0.5em;}
+		#header{margin: 10px 0;}
+		#dialog{display: none;}
+		#tabs{background-color: #fff;width:99%;}
+		#tabs-1, #tabs-2, #tabs-3{background-color: #fff;}
+		#tabs-2{height:800px;}
+		#left{ float: left; border: 1px solid #aaa;padding:10px 20px 5px 20px;}
+		#left_x{width:380px;float:left;}
+		#left_x table{widtxh:500px;}
+		#friend a{color:red;}
+		#status{ float: right;margin-top:5px; line-height:20px;font-size:1.5em;color:#f00;font-weight: bold;}
+		.auto_gen{cursor:pointer;}
+		#right_x{margin:0 0 0 0;padding:0px 0px;border:0px solid #bbb;min-width: 200px;float:left;width:1050px;height:auto;}
+		.save{ width:170px; height:40px;margin-top:10px;}
+		#save{ margin:5px 6px;float:right;}
+		#right{float: left;margin-left:100px; border: 1px solid #f00; width:450px;min-height:400px; text-align: center;}
+		#right tr{ height: 32px; }
+		#right table tr td:first-child{ text-align: right; width:80px;}
+		#right table tr td:last-child{ text-align: left; }
+	</style>
+</head>
+<body>
+
+<div id="container">
+
+<div id="header">
+	<img src="images/icon32.png" style="margin-bottom:-5px;"/><h2 class="i18n_options">大X多用版- by <a href="http://www.auwhver.com" target="_blank">澳打君团队</a></h2>
+</div>
+<div id="dialog" title="提示">
+  <p>提示内容</p>
+</div>
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">链接与说明</a></li>
+		<li><a href="#tabs-2">信息配置</a></li>
+	</ul>
+
+	<div id="tabs-1">
+		<div style="font-size:1.2em;font-weight:bold;text-align:left;">注意事项</div>
+
+
+					<li>本插件版本：2.2 ，<a href="http://www.auwhver.com/8202" target="_blank">点此查看</a>插件是否有更新。<a href="http://www.auwhver.com/7694" target="_blank">点此查看</a>插件使用技巧。<a href="http://www.auwhver.com/a" target="_blank">点此查看</a>打工度假/银蕨申请全攻略，抢名额流程介绍：<a href="http://auwhver.com/7679" target="_blank">澳洲WHV</a>;<a href="http://auwhver.com/28150" target="_blank">新西兰WHV</a>;<a href="http://auwhver.com/28046" target="_blank">新西兰SFV</a>。</li>
+					<li>插件只是工具，使用前请务必仔细了解抢名额规则、插件使用注意事项。任何误操作，插件开发者一律不背锅。尤其是澳洲忘记取消预约、新西兰2P等情况。</li>				
+					<li>手动操作模式：点击浏览器地址栏右侧紫色小飞机图标即可自动填表和跳转。自动操作模式：自动填表和自动跳转，部分信息需要手动（验证码、日期选择等）。</li>
+					<li>个人信息下拉框：可以配置八个不同信息，插件自动填写当前选择用户的信息，以此类推。感谢插件初始作者蚊兄的大力支持。发现bug可向QQ：2457185365反馈。</li>
+					<li>公众号及淘宝请扫描最下方二维码。欢迎加入QQ分享交流群：澳洲WHV：515099897。新西兰WHV：610359618。新西兰SFV：549016126。</li>
+
+					<br/>
+
+		<div style="font-size:1.2em;font-weight:bold;text-align:left;">快捷到达</div>
+			<div style="margin-top:5px;">
+				<div>
+			
+			
+					澳大利亚打工度假签证：<a href="http://www.vfsglobal.cn/Australia/China/" target="_blank">签证预约官网</a>&nbsp;&nbsp;&nbsp;<a href="https://online.vfsglobal.com/Global-Appointment/Account/RegisteredLogin?q=shSA0YnE4pLF9Xzwon/x/LuAvjd+x1cqVjY35ISPuGkygRZxO42Eb9Tvk53sBx29pA1X96p5xzS1CkcwCkeEXg==" target='_blank'>快捷预约(可能失效)</a>&nbsp;&nbsp;&nbsp;<a href="http://weibo.com/u/1918101143?topnav=1&wvr=6&topsug=1&is_all=1" target='_blank'>使领馆新浪微博</a>&nbsp;&nbsp;&nbsp;<a href="http://t.people.com.cn/australiaembassy" target='_blank'>人民微博</a>&nbsp;&nbsp;&nbsp;<a href="http://www.border.gov.au/Trav/Visa-1/462-" target='_blank'>移民局462签证</a>&nbsp;&nbsp;&nbsp;<a href="http://moni.chinawhver.com/" target='_blank'>老系统模拟(建议调成手动后再模拟流程)</a>
+					<b> </b><br/>
+					新西兰打工度假签证：&nbsp;&nbsp;&nbsp;<a href="https://onlineservices.immigration.govt.nz/?WHS" target='_blank'>抢名额登陆页</a>&nbsp;&nbsp;&nbsp;<a href="https://onlineservices.immigration.govt.nz/WorkingHoliday/" target="_blank">抢名额Home页</a>&nbsp;&nbsp;&nbsp;<a href="https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/about-visa/china-working-holiday-visa" target="_blank">移民局WHV介绍</a>&nbsp;&nbsp;&nbsp;<a href="http://pan.baidu.com/s/1nv1X233" target='_blank'>证件翻译模板</a>&nbsp;&nbsp;&nbsp;<a href="http://cqv.chinadegrees.cn/cn/" target='_blank'>高中学历清华认证</a>
+					<b> </b><br/>
+					新西兰银蕨签证：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://onlineservices.immigration.govt.nz/?SF" target='_blank'>抢名额登陆页</a>&nbsp;&nbsp;&nbsp;<a href="http://onlineservices.immigration.govt.nz/SilverFern/" target="_blank">抢名额Home页</a>&nbsp;&nbsp;&nbsp;<a href="https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/about-visa/silver-fern-job-search-work-visa" target='_blank'>移民局SFV介绍</a>&nbsp;&nbsp;&nbsp;<a href="http://onlineservices.immigration.govt.nz/opsmanual/35171.htm" target='_blank'>免NZQA清单</a>&nbsp;&nbsp;&nbsp;<a href="http://www.nzqa.govt.nz/" target='_blank'>NZQA官网</a>
+					<b> </b><br/>
+					其他常用链接：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://auwhver.com/time" target='_blank'>名额开放时间</a>&nbsp;&nbsp;&nbsp;<a href="http://auwhver.com/a" target='_blank'>名额申请全攻略</a>&nbsp;&nbsp;&nbsp;<a href="http://auwhver.com/service" target='_blank'>名额代抢服务</a>&nbsp;&nbsp;&nbsp;<a href="http://auwhver.com/blog" target='_blank'>资讯与分享</a>&nbsp;&nbsp;&nbsp;<a href="http://ielts.etest.net.cn/" target='_blank'>雅思官网</a>&nbsp;<a href="http://toefl.etest.net.cn/cn/" target='_blank'>托福官网</a>&nbsp;<a href="http://pearsonpte.com/" target='_blank'>PTE官网</a>							
+					<b> </b><br/>
+
+					
+
+					*链接生成器*：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入新西兰WHV表格号码：<input type="text" id="number"/> <input type="button" value="生成" id="submit0"><br/>
+					<li id="url1" style="display:none;">PersonalDetail:https://onlineservices.immigration.govt.nz/WorkingHoliday/Wizard/Personal1.aspx?ApplicationId=*******&IndividualType=Primary&IndividualIndex=1</li>
+					<li id="url2" style="display:none;">Identification&nbsp;:https://onlineservices.immigration.govt.nz/WorkingHoliday/Wizard/Personal2.aspx?ApplicationId=*******&IndividualType=Primary&IndividualIndex=1</li>
+					<li id="url3" style="display:none;">Health&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:https://onlineservices.immigration.govt.nz/WorkingHoliday/Wizard/Medical1.aspx?ApplicationId=*******&IndividualType=Primary&IndividualIndex=1</li>
+					<li id="url4" style="display:none;">Character&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:https://onlineservices.immigration.govt.nz/WorkingHoliday/Wizard/Character.aspx?ApplicationId=*******&IndividualType=Primary&IndividualIndex=1</li>
+					<li id="url5" style="display:none;">Specific&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:https://onlineservices.immigration.govt.nz/WorkingHoliday/Wizard/WorkingHolidaySpecific.aspx?ApplicationId=*******&IndividualType=Primary&IndividualIndex=1</li>
+					<li id="url6" style="display:none;">Submit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:https://onlineservices.immigration.govt.nz/WORKINGHOLIDAY/Application/Submit.aspx?ApplicationId=*******</li>
+			
+
+
+<br/>
+					我们鼓励各位申请者自己抢名额，同时也提供代抢服务，可以作为双重保障。详情请点击：<a href="http://www.auwhver.com/service" target="_blank">http://www.auwhver.com/service</a><br/>
+					代抢服务使用的并非本插件，而是更快速的全自动POST预约系统以及半自动人工方案。扫一扫加关注，资讯攻略全掌握。<br/>
+
+
+					<img src="images/code.png"/>
+
+
+
+
+				</div>
+
+			</div>
+
+
+
+	</div>
+
+	<div id="tabs-2">
+
+		<div id="left_x" style="">
+			<div>
+
+				<span>&uArr;使用前请先仔细阅读说明</span><br/>
+	
+				<form action="http://inform.auwhver.com/" target="_blank"><input type="submit" value="我想要在签证有最新消息的第一时间接收到短信推送" style="width:350px;height:30px;"></form> 
+
+				
+			</div>
+			
+			<div id="friend">
+			<b>     </b><br/>
+			<div style="font-size:1.2em;font-weight:bold;text-align:left;">配置信息</div>
+				
+			</div>
+			<table>
+			<tr>
+				<td>
+					操作模式：
+				</td>
+				<td>
+					<select id="is_hand" style="margin-top:10px;">
+					 <option value="1">手动</option>
+					 <option value="0">自动</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>个人信息：</td>
+				<td>
+					<select id="info_type">
+					 <option value="zhao" selected>用户1</option>
+					 <option value="qian">用户2</option>
+					 <option value="sun">用户3</option>
+					 <option value="li">用户4</option>
+					 <option value="zhou">用户5</option>
+					 <option value="wu">用户6</option>
+					 <option value="zheng">用户7</option>
+					 <option value="wang">用户8</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>签证类别：</td>
+				<td>
+					<select id="visatype">
+					 <option value="1">general</option>
+					 <option value="2">WHV</option>
+					</select>
+				</td>
+			</tr>
+	<tr>
+				<td>国籍：</td>
+				<td>
+					<select id="contry_apply">
+					<option value="">Select an country</option>
+							<option value="4">Afghanistan</option>
+							<option value="5">Albania</option>
+							<option value="6">Algeria</option>
+							<option value="7">American Samoa</option>
+							<option value="8">Andorra</option>
+							<option value="9">Angola</option>
+							<option value="10">Anguilla</option>
+							<option value="11">Antarctica</option>
+							<option value="12">Antigua &amp; Barbuda</option>
+							<option value="13">Argentina</option>
+							<option value="14">Armenia</option>
+							<option value="15">Aruba</option>
+							<option value="16">Australia</option>
+							<option value="17">Austria</option>
+							<option value="18">Azerbaijan</option>
+							<option value="19">Bahamas</option>
+							<option value="20">Bahrain</option>
+							<option value="21">Bangladesh</option>
+							<option value="22">Barbados</option>
+							<option value="23">Belarus</option>
+							<option value="24">Belgium</option>
+							<option value="25">Belize</option>
+							<option value="26">Benin</option>
+							<option value="27">Bermuda</option>
+							<option value="28">Bhutan</option>
+							<option value="29">Bolivia</option>
+							<option value="252">Bonaire, Sint Eustatius &amp; Saba</option>
+							<option value="30">Bosnia &amp; Herzegovina</option>
+							<option value="31">Botswana</option>
+							<option value="32">Brazil</option>
+							<option value="33">British Indian Ocean Territory</option>
+							<option value="34">Brunei Darussalam</option>
+							<option value="35">Bulgaria</option>
+							<option value="36">Burkina Faso</option>
+							<option value="37">Burundi</option>
+							<option value="38">Cambodia</option>
+							<option value="39">Cameroon</option>
+							<option value="40">Canada</option>
+							<option value="41">Cape Verde</option>
+							<option value="42">Cayman Islands</option>
+							<option value="43">Central African Republic</option>
+							<option value="44">Chad</option>
+							<option value="45">Chile</option>
+							<option selected="selected" value="46">China</option>
+							<option value="47">Christmas Island</option>
+							<option value="48">Cocos (Keeling) Island</option>
+							<option value="49">Colombia</option>
+							<option value="50">Comoros</option>
+							<option value="51">Congo</option>
+							<option value="52">Cook Islands</option>
+							<option value="53">Costa Rica</option>
+							<option value="54">Croatia</option>
+							<option value="55">Cuba</option>
+							<option value="253">Curacao</option>
+							<option value="56">Cyprus</option>
+							<option value="57">Czech Republic</option>
+							<option value="58">Democratic Republic of Congo</option>
+							<option value="59">Denmark</option>
+							<option value="60">Djibouti</option>
+							<option value="61">Dominica</option>
+							<option value="62">Dominican Republic</option>
+							<option value="63">East Timor</option>
+							<option value="64">Ecuador</option>
+							<option value="65">Egypt</option>
+							<option value="66">El Salvador</option>
+							<option value="67">Equitorial Guinea</option>
+							<option value="68">Eritrea</option>
+							<option value="69">Estonia</option>
+							<option value="70">Ethiopia</option>
+							<option value="71">Faeroe Islands</option>
+							<option value="72">Falkland Islands</option>
+							<option value="73">Federated States of Micronesia</option>
+							<option value="74">Fiji</option>
+							<option value="75">Finland</option>
+							<option value="76">France</option>
+							<option value="77">French Guiana</option>
+							<option value="78">French Polynesia</option>
+							<option value="79">Gabon</option>
+							<option value="80">Gambia</option>
+							<option value="81">Georgia</option>
+							<option value="82">Germany</option>
+							<option value="83">Ghana</option>
+							<option value="84">Gibraltar</option>
+							<option value="85">Great Britain</option>
+							<option value="86">Greece</option>
+							<option value="87">Greenland</option>
+							<option value="88">Grenada</option>
+							<option value="89">Guadeloupe</option>
+							<option value="90">Guam</option>
+							<option value="91">Guatemala</option>
+							<option value="92">Guinea</option>
+							<option value="93">Guinea - Bissau</option>
+							<option value="94">Guyana</option>
+							<option value="95">Haiti</option>
+							<option value="96">Honduras</option>
+							<option value="97">Hong Kong</option>
+							<option value="98">Hungary</option>
+							<option value="99">Iceland</option>
+							<option value="100">India</option>
+							<option value="101">Indonesia</option>
+							<option value="102">Iran</option>
+							<option value="103">Iraq</option>
+							<option value="104">Ireland</option>
+							<option value="105">Israel</option>
+							<option value="106">Italy</option>
+							<option value="107">Ivory Coast</option>
+							<option value="108">Jamaica</option>
+							<option value="109">Japan</option>
+							<option value="110">Jordan</option>
+							<option value="111">Kazakhstan</option>
+							<option value="112">Kenya</option>
+							<option value="113">Kiribati</option>
+							<option value="114">Kosovo - UN Mission in</option>
+							<option value="250">Kosovo - Republic of</option>
+							<option value="115">Kuwait</option>
+							<option value="116">Kyrgyzstan</option>
+							<option value="117">Laos</option>
+							<option value="118">Latvia</option>
+							<option value="119">Lebanon</option>
+							<option value="120">Lesotho</option>
+							<option value="121">Liberia</option>
+							<option value="122">Libya</option>
+							<option value="123">Liechtenstein</option>
+							<option value="124">Lithuania</option>
+							<option value="125">Luxembourg</option>
+							<option value="126">Macau</option>
+							<option value="127">Macedonia</option>
+							<option value="128">Madagascar</option>
+							<option value="129">Malawi</option>
+							<option value="130">Malaysia</option>
+							<option value="131">Maldives</option>
+							<option value="132">Mali</option>
+							<option value="133">Malta</option>
+							<option value="134">Marshall Islands</option>
+							<option value="135">Martinique</option>
+							<option value="136">Mauritania</option>
+							<option value="137">Mauritius</option>
+							<option value="138">Mayotte</option>
+							<option value="139">Mexico</option>
+							<option value="140">Moldova</option>
+							<option value="141">Monaco</option>
+							<option value="142">Mongolia</option>
+							<option value="248">Montenegro</option>
+							<option value="143">Montserrat</option>
+							<option value="144">Morocco</option>
+							<option value="145">Mozambique</option>
+							<option value="146">Myanmar</option>
+							<option value="147">Namibia</option>
+							<option value="148">Nauru</option>
+							<option value="149">Nepal</option>
+							<option value="150">Netherlands</option>
+							<option value="151">Netherlands Antilles</option>
+							<option value="152">New Caledonia</option>
+							<option value="153">New Zealand</option>
+							<option value="154">Nicaragua</option>
+							<option value="155">Niger</option>
+							<option value="156">Nigeria</option>
+							<option value="157">Niue</option>
+							<option value="158">Norfolk Island</option>
+							<option value="159">North Korea</option>
+							<option value="160">Northern Mariana Islands</option>
+							<option value="161">Norway</option>
+							<option value="162">Oman</option>
+							<option value="163">Pacific Island Trust Territory</option>
+							<option value="164">Pakistan</option>
+							<option value="165">Palau</option>
+							<option value="166">Palestine</option>
+							<option value="167">Panama</option>
+							<option value="168">Papua New Guinea</option>
+							<option value="169">Paraguay</option>
+							<option value="170">Peru</option>
+							<option value="171">Philippines</option>
+							<option value="172">Pitcairn Islands</option>
+							<option value="173">Poland</option>
+							<option value="174">Portugal</option>
+							<option value="175">Puerto Rico</option>
+							<option value="176">Qatar</option>
+							<option value="177">Reunion</option>
+							<option value="178">Romania</option>
+							<option value="179">Russia</option>
+							<option value="180">Rwanda</option>
+							<option value="181">Samoa</option>
+							<option value="182">San Marino</option>
+							<option value="183">Sao Tome &amp; Principe</option>
+							<option value="184">Saudi Arabia</option>
+							<option value="185">Senegal</option>
+							<option value="247">Serbia</option>
+							<option value="249">Serbia &amp; Montenegro</option>
+							<option value="186">Seychelles</option>
+							<option value="187">Sierra Leone</option>
+							<option value="188">Singapore</option>
+							<option value="254">Sint Maarten </option>
+							<option value="189">Slovakia</option>
+							<option value="190">Slovenia</option>
+							<option value="191">Solomon Islands</option>
+							<option value="192">Somalia</option>
+							<option value="193">South Africa</option>
+							<option value="194">South Korea</option>
+							<option value="195">South Pacific commission</option>
+							<option value="251">South Sudan</option>
+							<option value="196">Soviet Union</option>
+							<option value="197">Spain</option>
+							<option value="198">Sri Lanka</option>
+							<option value="199">St Helena</option>
+							<option value="200">St Kitts - Nevis</option>
+							<option value="201">St Lucia</option>
+							<option value="202">St Pierre &amp; Miquelon</option>
+							<option value="203">St Vincent and the Grenadines</option>
+							<option value="204">Sth Georgia &amp; Sandwich Islands</option>
+							<option value="205">Sudan</option>
+							<option value="206">Suriname</option>
+							<option value="207">Swaziland</option>
+							<option value="208">Sweden</option>
+							<option value="209">Switzerland</option>
+							<option value="210">Syria</option>
+							<option value="211">Taiwan</option>
+							<option value="212">Tajikistan</option>
+							<option value="213">Tanzania</option>
+							<option value="214">Thailand</option>
+							<option value="215">Timor Leste</option>
+							<option value="216">Togo</option>
+							<option value="217">Tokelau</option>
+							<option value="218">Tonga</option>
+							<option value="219">Trinidad and Tobago</option>
+							<option value="220">Tunisia</option>
+							<option value="221">Turkemenistan</option>
+							<option value="222">Turkey</option>
+							<option value="223">Turks and Caicos Islands</option>
+							<option value="224">Tuvalu</option>
+							<option value="225">Uganda</option>
+							<option value="226">Ukraine</option>
+							<option value="227">United Arab Emirates</option>
+							<option value="228">United Nations</option>
+							<option value="229">United States of America</option>
+							<option value="230">Uruguay</option>
+							<option value="231">US Outlying Islands</option>
+							<option value="232">US Pacific Islands</option>
+							<option value="233">Uzbekistan</option>
+							<option value="234">Vanuatu</option>
+							<option value="235">Vatican City</option>
+							<option value="236">Venezuela</option>
+							<option value="237">Vietnam</option>
+							<option value="238">Virgin Islands, British</option>
+							<option value="239">Virgin Islands, USA</option>
+							<option value="240">Wallis and Futuna</option>
+							<option value="241">Western Sahara</option>
+							<option value="242">Yemen</option>
+							<option value="243">Yugoslavia</option>
+							<option value="244">Zambia</option>
+							<option value="245">Zimbabwe</option>
+
+						</select>
+				</td>
+			</tr>
+			<tr>
+				<td>AU邮箱/NZ账号：</td>
+				<td><input id='reg_mail' type="text" value=""/></td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td><input id='reg_pwd' type="text" value=""/></td>
+			</tr>
+			<tr>
+				<td>递交城市(for澳洲)：</td>
+				<td>
+					<select id="city">
+					 <option value="28">北京</option>
+					 <option value="29">上海</option>
+					 <option value="30">广州</option>
+					 <option value="31">成都</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				（点击随机生成一套测试信息&rArr;）
+					<span id="auto_gen" class="auto_gen" tiiiitle="自动生成一套测试信息，生成完了记得保存哦~为避免开抢时误操作，这里就不加按钮了~" style="display:none">自动生成：</span><button class="auto_gen" id="auto_gen0" title="自动生成一套测试信息，生成完了记得保存哦~" style="">自动生成</button>
+				
+				</td>
+			</tr>
+					</table>
+		</div>
+		<div id="left_x" style="">
+			<table>		
+			<tr style="line-height: 15px">
+				<td>纽澳都必填部分：</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>护照号码：</td>
+				<td><input id='passportNo' type="text" value="E23307381"/></td>
+			</tr>
+
+			<tr>
+				<td>护照起始日期：</td>
+				<td><input id='passport_startday' type="text" value="" placeholder="DD/MM/YYYY"/></td>
+			</tr>
+			<tr>
+				<td>护照失效日期：</td>
+				<td><input id='passport_day' type="text" value="" placeholder="DD/MM/YYYY"/></td>
+			</tr>
+			<tr>
+				<td>出生日期：</td>
+				<td><input id='birth_day' type="text" value="" placeholder="DD/MM/YYYY"/></td>
+			</tr>
+			<tr>
+				<td>性别：</td>
+				<td>
+					<select id="title" style="font-weight:bold;">
+						<option value="1" selected>男</option>
+						 <option value="2">女</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>名字（中文名拼音）：</td>
+				<td><input id='Fname' type="text" value="BING"/></td>
+			</tr>
+			<tr>
+				<td>姓氏（中文姓拼音）：</td>
+				<td><input id='Lname' type="text" value="YANG"/></td>
+			</tr>
+			<tr>
+				<td>区号(086)：</td>
+				<td><input id='AreaNo' type="text" value="086"/></td>
+			</tr>
+			<tr>
+				<td>座机：</td>
+				<td><input id='phoneNo' type="text"/></td>
+			</tr>
+			<tr>
+				<td>手机：</td>
+				<td><input id='telephoneNo' type="text" value="12345678909"/></td>
+			</tr>
+			<tr>
+				<td>邮箱：</td>
+				<td><input id='mail' type="text" value="abc@qq.com"/></td>
+			</tr>
+
+
+		</table>
+		</div>
+		<div id="left_x" style="">
+			<table>		
+			<tr style="line-height: 15px">
+				<td>新西兰加填部分：</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>出生国家：</td>
+				<td>
+					<select id="contry_of_birth">
+	<option value="">Select an country</option>
+			<option value="4">Afghanistan</option>
+			<option value="5">Albania</option>
+			<option value="6">Algeria</option>
+			<option value="7">American Samoa</option>
+			<option value="8">Andorra</option>
+			<option value="9">Angola</option>
+			<option value="10">Anguilla</option>
+			<option value="11">Antarctica</option>
+			<option value="12">Antigua &amp; Barbuda</option>
+			<option value="13">Argentina</option>
+			<option value="14">Armenia</option>
+			<option value="15">Aruba</option>
+			<option value="16">Australia</option>
+			<option value="17">Austria</option>
+			<option value="18">Azerbaijan</option>
+			<option value="19">Bahamas</option>
+			<option value="20">Bahrain</option>
+			<option value="21">Bangladesh</option>
+			<option value="22">Barbados</option>
+			<option value="23">Belarus</option>
+			<option value="24">Belgium</option>
+			<option value="25">Belize</option>
+			<option value="26">Benin</option>
+			<option value="27">Bermuda</option>
+			<option value="28">Bhutan</option>
+			<option value="29">Bolivia</option>
+			<option value="252">Bonaire, Sint Eustatius &amp; Saba</option>
+			<option value="30">Bosnia &amp; Herzegovina</option>
+			<option value="31">Botswana</option>
+			<option value="32">Brazil</option>
+			<option value="33">British Indian Ocean Territory</option>
+			<option value="34">Brunei Darussalam</option>
+			<option value="35">Bulgaria</option>
+			<option value="36">Burkina Faso</option>
+			<option value="37">Burundi</option>
+			<option value="38">Cambodia</option>
+			<option value="39">Cameroon</option>
+			<option value="40">Canada</option>
+			<option value="41">Cape Verde</option>
+			<option value="42">Cayman Islands</option>
+			<option value="43">Central African Republic</option>
+			<option value="44">Chad</option>
+			<option value="45">Chile</option>
+			<option selected="selected" value="46">China</option>
+			<option value="47">Christmas Island</option>
+			<option value="48">Cocos (Keeling) Island</option>
+			<option value="49">Colombia</option>
+			<option value="50">Comoros</option>
+			<option value="51">Congo</option>
+			<option value="52">Cook Islands</option>
+			<option value="53">Costa Rica</option>
+			<option value="54">Croatia</option>
+			<option value="55">Cuba</option>
+			<option value="253">Curacao</option>
+			<option value="56">Cyprus</option>
+			<option value="57">Czech Republic</option>
+			<option value="58">Democratic Republic of Congo</option>
+			<option value="59">Denmark</option>
+			<option value="60">Djibouti</option>
+			<option value="61">Dominica</option>
+			<option value="62">Dominican Republic</option>
+			<option value="63">East Timor</option>
+			<option value="64">Ecuador</option>
+			<option value="65">Egypt</option>
+			<option value="66">El Salvador</option>
+			<option value="67">Equitorial Guinea</option>
+			<option value="68">Eritrea</option>
+			<option value="69">Estonia</option>
+			<option value="70">Ethiopia</option>
+			<option value="71">Faeroe Islands</option>
+			<option value="72">Falkland Islands</option>
+			<option value="73">Federated States of Micronesia</option>
+			<option value="74">Fiji</option>
+			<option value="75">Finland</option>
+			<option value="76">France</option>
+			<option value="77">French Guiana</option>
+			<option value="78">French Polynesia</option>
+			<option value="79">Gabon</option>
+			<option value="80">Gambia</option>
+			<option value="81">Georgia</option>
+			<option value="82">Germany</option>
+			<option value="83">Ghana</option>
+			<option value="84">Gibraltar</option>
+			<option value="85">Great Britain</option>
+			<option value="86">Greece</option>
+			<option value="87">Greenland</option>
+			<option value="88">Grenada</option>
+			<option value="89">Guadeloupe</option>
+			<option value="90">Guam</option>
+			<option value="91">Guatemala</option>
+			<option value="92">Guinea</option>
+			<option value="93">Guinea - Bissau</option>
+			<option value="94">Guyana</option>
+			<option value="95">Haiti</option>
+			<option value="96">Honduras</option>
+			<option value="97">Hong Kong</option>
+			<option value="98">Hungary</option>
+			<option value="99">Iceland</option>
+			<option value="100">India</option>
+			<option value="101">Indonesia</option>
+			<option value="102">Iran</option>
+			<option value="103">Iraq</option>
+			<option value="104">Ireland</option>
+			<option value="105">Israel</option>
+			<option value="106">Italy</option>
+			<option value="107">Ivory Coast</option>
+			<option value="108">Jamaica</option>
+			<option value="109">Japan</option>
+			<option value="110">Jordan</option>
+			<option value="111">Kazakhstan</option>
+			<option value="112">Kenya</option>
+			<option value="113">Kiribati</option>
+			<option value="114">Kosovo - UN Mission in</option>
+			<option value="250">Kosovo - Republic of</option>
+			<option value="115">Kuwait</option>
+			<option value="116">Kyrgyzstan</option>
+			<option value="117">Laos</option>
+			<option value="118">Latvia</option>
+			<option value="119">Lebanon</option>
+			<option value="120">Lesotho</option>
+			<option value="121">Liberia</option>
+			<option value="122">Libya</option>
+			<option value="123">Liechtenstein</option>
+			<option value="124">Lithuania</option>
+			<option value="125">Luxembourg</option>
+			<option value="126">Macau</option>
+			<option value="127">Macedonia</option>
+			<option value="128">Madagascar</option>
+			<option value="129">Malawi</option>
+			<option value="130">Malaysia</option>
+			<option value="131">Maldives</option>
+			<option value="132">Mali</option>
+			<option value="133">Malta</option>
+			<option value="134">Marshall Islands</option>
+			<option value="135">Martinique</option>
+			<option value="136">Mauritania</option>
+			<option value="137">Mauritius</option>
+			<option value="138">Mayotte</option>
+			<option value="139">Mexico</option>
+			<option value="140">Moldova</option>
+			<option value="141">Monaco</option>
+			<option value="142">Mongolia</option>
+			<option value="248">Montenegro</option>
+			<option value="143">Montserrat</option>
+			<option value="144">Morocco</option>
+			<option value="145">Mozambique</option>
+			<option value="146">Myanmar</option>
+			<option value="147">Namibia</option>
+			<option value="148">Nauru</option>
+			<option value="149">Nepal</option>
+			<option value="150">Netherlands</option>
+			<option value="151">Netherlands Antilles</option>
+			<option value="152">New Caledonia</option>
+			<option value="153">New Zealand</option>
+			<option value="154">Nicaragua</option>
+			<option value="155">Niger</option>
+			<option value="156">Nigeria</option>
+			<option value="157">Niue</option>
+			<option value="158">Norfolk Island</option>
+			<option value="159">North Korea</option>
+			<option value="160">Northern Mariana Islands</option>
+			<option value="161">Norway</option>
+			<option value="162">Oman</option>
+			<option value="163">Pacific Island Trust Territory</option>
+			<option value="164">Pakistan</option>
+			<option value="165">Palau</option>
+			<option value="166">Palestine</option>
+			<option value="167">Panama</option>
+			<option value="168">Papua New Guinea</option>
+			<option value="169">Paraguay</option>
+			<option value="170">Peru</option>
+			<option value="171">Philippines</option>
+			<option value="172">Pitcairn Islands</option>
+			<option value="173">Poland</option>
+			<option value="174">Portugal</option>
+			<option value="175">Puerto Rico</option>
+			<option value="176">Qatar</option>
+			<option value="177">Reunion</option>
+			<option value="178">Romania</option>
+			<option value="179">Russia</option>
+			<option value="180">Rwanda</option>
+			<option value="181">Samoa</option>
+			<option value="182">San Marino</option>
+			<option value="183">Sao Tome &amp; Principe</option>
+			<option value="184">Saudi Arabia</option>
+			<option value="185">Senegal</option>
+			<option value="247">Serbia</option>
+			<option value="249">Serbia &amp; Montenegro</option>
+			<option value="186">Seychelles</option>
+			<option value="187">Sierra Leone</option>
+			<option value="188">Singapore</option>
+			<option value="254">Sint Maarten </option>
+			<option value="189">Slovakia</option>
+			<option value="190">Slovenia</option>
+			<option value="191">Solomon Islands</option>
+			<option value="192">Somalia</option>
+			<option value="193">South Africa</option>
+			<option value="194">South Korea</option>
+			<option value="195">South Pacific commission</option>
+			<option value="251">South Sudan</option>
+			<option value="196">Soviet Union</option>
+			<option value="197">Spain</option>
+			<option value="198">Sri Lanka</option>
+			<option value="199">St Helena</option>
+			<option value="200">St Kitts - Nevis</option>
+			<option value="201">St Lucia</option>
+			<option value="202">St Pierre &amp; Miquelon</option>
+			<option value="203">St Vincent and the Grenadines</option>
+			<option value="204">Sth Georgia &amp; Sandwich Islands</option>
+			<option value="205">Sudan</option>
+			<option value="206">Suriname</option>
+			<option value="207">Swaziland</option>
+			<option value="208">Sweden</option>
+			<option value="209">Switzerland</option>
+			<option value="210">Syria</option>
+			<option value="211">Taiwan</option>
+			<option value="212">Tajikistan</option>
+			<option value="213">Tanzania</option>
+			<option value="214">Thailand</option>
+			<option value="215">Timor Leste</option>
+			<option value="216">Togo</option>
+			<option value="217">Tokelau</option>
+			<option value="218">Tonga</option>
+			<option value="219">Trinidad and Tobago</option>
+			<option value="220">Tunisia</option>
+			<option value="221">Turkemenistan</option>
+			<option value="222">Turkey</option>
+			<option value="223">Turks and Caicos Islands</option>
+			<option value="224">Tuvalu</option>
+			<option value="225">Uganda</option>
+			<option value="226">Ukraine</option>
+			<option value="227">United Arab Emirates</option>
+			<option value="228">United Nations</option>
+			<option value="229">United States of America</option>
+			<option value="230">Uruguay</option>
+			<option value="231">US Outlying Islands</option>
+			<option value="232">US Pacific Islands</option>
+			<option value="233">Uzbekistan</option>
+			<option value="234">Vanuatu</option>
+			<option value="235">Vatican City</option>
+			<option value="236">Venezuela</option>
+			<option value="237">Vietnam</option>
+			<option value="238">Virgin Islands, British</option>
+			<option value="239">Virgin Islands, USA</option>
+			<option value="240">Wallis and Futuna</option>
+			<option value="241">Western Sahara</option>
+			<option value="242">Yemen</option>
+			<option value="243">Yugoslavia</option>
+			<option value="244">Zambia</option>
+			<option value="245">Zimbabwe</option>
+
+		</select>
+				</td>
+			</tr>
+			<tr>
+				<td>证件类别：</td>
+				<td>
+					<select id="id_type">
+					<option selected="selected" value="">Select an option</option>
+					<option value="1">Driver License</option>
+					<option value="2">Birth Certificate</option>
+					<option value="3">National ID</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>证件号码：</td>
+				<td><input id='id_number' type="text" value="" /></td>
+			</tr>			
+			<tr>
+				<td>证件起始日期：</td>
+				<td><input id='id_start_date' type="text" placeholder="DD/MM/YYYY"/></td>
+			</tr>
+			<tr>
+				<td>证件失效日期：</td>
+				<td><input id='id_end_date' type="text" value="" placeholder="DD/MM/YYYY"/></td>
+			</tr>
+			<tr>
+				<td>居住街道：</td>
+				<td><input id='address_street' type="text" /></td>
+			</tr>
+			<tr>
+				<td>居住城镇：</td>
+				<td><input id='address_suburb' type="text" /></td>
+			</tr>
+			<tr>
+				<td>居住城市：</td>
+				<td><input id='address_city' type="text" /></td>
+			</tr>
+				<tr>
+				<td>居住国家：</td>
+				<td>
+					<select id="address_country">
+	<option value="">Select an country</option>
+			<option value="4">Afghanistan</option>
+			<option value="5">Albania</option>
+			<option value="6">Algeria</option>
+			<option value="7">American Samoa</option>
+			<option value="8">Andorra</option>
+			<option value="9">Angola</option>
+			<option value="10">Anguilla</option>
+			<option value="11">Antarctica</option>
+			<option value="12">Antigua &amp; Barbuda</option>
+			<option value="13">Argentina</option>
+			<option value="14">Armenia</option>
+			<option value="15">Aruba</option>
+			<option value="16">Australia</option>
+			<option value="17">Austria</option>
+			<option value="18">Azerbaijan</option>
+			<option value="19">Bahamas</option>
+			<option value="20">Bahrain</option>
+			<option value="21">Bangladesh</option>
+			<option value="22">Barbados</option>
+			<option value="23">Belarus</option>
+			<option value="24">Belgium</option>
+			<option value="25">Belize</option>
+			<option value="26">Benin</option>
+			<option value="27">Bermuda</option>
+			<option value="28">Bhutan</option>
+			<option value="29">Bolivia</option>
+			<option value="252">Bonaire, Sint Eustatius &amp; Saba</option>
+			<option value="30">Bosnia &amp; Herzegovina</option>
+			<option value="31">Botswana</option>
+			<option value="32">Brazil</option>
+			<option value="33">British Indian Ocean Territory</option>
+			<option value="34">Brunei Darussalam</option>
+			<option value="35">Bulgaria</option>
+			<option value="36">Burkina Faso</option>
+			<option value="37">Burundi</option>
+			<option value="38">Cambodia</option>
+			<option value="39">Cameroon</option>
+			<option value="40">Canada</option>
+			<option value="41">Cape Verde</option>
+			<option value="42">Cayman Islands</option>
+			<option value="43">Central African Republic</option>
+			<option value="44">Chad</option>
+			<option value="45">Chile</option>
+			<option selected="selected" value="46">China</option>
+			<option value="47">Christmas Island</option>
+			<option value="48">Cocos (Keeling) Island</option>
+			<option value="49">Colombia</option>
+			<option value="50">Comoros</option>
+			<option value="51">Congo</option>
+			<option value="52">Cook Islands</option>
+			<option value="53">Costa Rica</option>
+			<option value="54">Croatia</option>
+			<option value="55">Cuba</option>
+			<option value="253">Curacao</option>
+			<option value="56">Cyprus</option>
+			<option value="57">Czech Republic</option>
+			<option value="58">Democratic Republic of Congo</option>
+			<option value="59">Denmark</option>
+			<option value="60">Djibouti</option>
+			<option value="61">Dominica</option>
+			<option value="62">Dominican Republic</option>
+			<option value="63">East Timor</option>
+			<option value="64">Ecuador</option>
+			<option value="65">Egypt</option>
+			<option value="66">El Salvador</option>
+			<option value="67">Equitorial Guinea</option>
+			<option value="68">Eritrea</option>
+			<option value="69">Estonia</option>
+			<option value="70">Ethiopia</option>
+			<option value="71">Faeroe Islands</option>
+			<option value="72">Falkland Islands</option>
+			<option value="73">Federated States of Micronesia</option>
+			<option value="74">Fiji</option>
+			<option value="75">Finland</option>
+			<option value="76">France</option>
+			<option value="77">French Guiana</option>
+			<option value="78">French Polynesia</option>
+			<option value="79">Gabon</option>
+			<option value="80">Gambia</option>
+			<option value="81">Georgia</option>
+			<option value="82">Germany</option>
+			<option value="83">Ghana</option>
+			<option value="84">Gibraltar</option>
+			<option value="85">Great Britain</option>
+			<option value="86">Greece</option>
+			<option value="87">Greenland</option>
+			<option value="88">Grenada</option>
+			<option value="89">Guadeloupe</option>
+			<option value="90">Guam</option>
+			<option value="91">Guatemala</option>
+			<option value="92">Guinea</option>
+			<option value="93">Guinea - Bissau</option>
+			<option value="94">Guyana</option>
+			<option value="95">Haiti</option>
+			<option value="96">Honduras</option>
+			<option value="97">Hong Kong</option>
+			<option value="98">Hungary</option>
+			<option value="99">Iceland</option>
+			<option value="100">India</option>
+			<option value="101">Indonesia</option>
+			<option value="102">Iran</option>
+			<option value="103">Iraq</option>
+			<option value="104">Ireland</option>
+			<option value="105">Israel</option>
+			<option value="106">Italy</option>
+			<option value="107">Ivory Coast</option>
+			<option value="108">Jamaica</option>
+			<option value="109">Japan</option>
+			<option value="110">Jordan</option>
+			<option value="111">Kazakhstan</option>
+			<option value="112">Kenya</option>
+			<option value="113">Kiribati</option>
+			<option value="114">Kosovo - UN Mission in</option>
+			<option value="250">Kosovo - Republic of</option>
+			<option value="115">Kuwait</option>
+			<option value="116">Kyrgyzstan</option>
+			<option value="117">Laos</option>
+			<option value="118">Latvia</option>
+			<option value="119">Lebanon</option>
+			<option value="120">Lesotho</option>
+			<option value="121">Liberia</option>
+			<option value="122">Libya</option>
+			<option value="123">Liechtenstein</option>
+			<option value="124">Lithuania</option>
+			<option value="125">Luxembourg</option>
+			<option value="126">Macau</option>
+			<option value="127">Macedonia</option>
+			<option value="128">Madagascar</option>
+			<option value="129">Malawi</option>
+			<option value="130">Malaysia</option>
+			<option value="131">Maldives</option>
+			<option value="132">Mali</option>
+			<option value="133">Malta</option>
+			<option value="134">Marshall Islands</option>
+			<option value="135">Martinique</option>
+			<option value="136">Mauritania</option>
+			<option value="137">Mauritius</option>
+			<option value="138">Mayotte</option>
+			<option value="139">Mexico</option>
+			<option value="140">Moldova</option>
+			<option value="141">Monaco</option>
+			<option value="142">Mongolia</option>
+			<option value="248">Montenegro</option>
+			<option value="143">Montserrat</option>
+			<option value="144">Morocco</option>
+			<option value="145">Mozambique</option>
+			<option value="146">Myanmar</option>
+			<option value="147">Namibia</option>
+			<option value="148">Nauru</option>
+			<option value="149">Nepal</option>
+			<option value="150">Netherlands</option>
+			<option value="151">Netherlands Antilles</option>
+			<option value="152">New Caledonia</option>
+			<option value="153">New Zealand</option>
+			<option value="154">Nicaragua</option>
+			<option value="155">Niger</option>
+			<option value="156">Nigeria</option>
+			<option value="157">Niue</option>
+			<option value="158">Norfolk Island</option>
+			<option value="159">North Korea</option>
+			<option value="160">Northern Mariana Islands</option>
+			<option value="161">Norway</option>
+			<option value="162">Oman</option>
+			<option value="163">Pacific Island Trust Territory</option>
+			<option value="164">Pakistan</option>
+			<option value="165">Palau</option>
+			<option value="166">Palestine</option>
+			<option value="167">Panama</option>
+			<option value="168">Papua New Guinea</option>
+			<option value="169">Paraguay</option>
+			<option value="170">Peru</option>
+			<option value="171">Philippines</option>
+			<option value="172">Pitcairn Islands</option>
+			<option value="173">Poland</option>
+			<option value="174">Portugal</option>
+			<option value="175">Puerto Rico</option>
+			<option value="176">Qatar</option>
+			<option value="177">Reunion</option>
+			<option value="178">Romania</option>
+			<option value="179">Russia</option>
+			<option value="180">Rwanda</option>
+			<option value="181">Samoa</option>
+			<option value="182">San Marino</option>
+			<option value="183">Sao Tome &amp; Principe</option>
+			<option value="184">Saudi Arabia</option>
+			<option value="185">Senegal</option>
+			<option value="247">Serbia</option>
+			<option value="249">Serbia &amp; Montenegro</option>
+			<option value="186">Seychelles</option>
+			<option value="187">Sierra Leone</option>
+			<option value="188">Singapore</option>
+			<option value="254">Sint Maarten </option>
+			<option value="189">Slovakia</option>
+			<option value="190">Slovenia</option>
+			<option value="191">Solomon Islands</option>
+			<option value="192">Somalia</option>
+			<option value="193">South Africa</option>
+			<option value="194">South Korea</option>
+			<option value="195">South Pacific commission</option>
+			<option value="251">South Sudan</option>
+			<option value="196">Soviet Union</option>
+			<option value="197">Spain</option>
+			<option value="198">Sri Lanka</option>
+			<option value="199">St Helena</option>
+			<option value="200">St Kitts - Nevis</option>
+			<option value="201">St Lucia</option>
+			<option value="202">St Pierre &amp; Miquelon</option>
+			<option value="203">St Vincent and the Grenadines</option>
+			<option value="204">Sth Georgia &amp; Sandwich Islands</option>
+			<option value="205">Sudan</option>
+			<option value="206">Suriname</option>
+			<option value="207">Swaziland</option>
+			<option value="208">Sweden</option>
+			<option value="209">Switzerland</option>
+			<option value="210">Syria</option>
+			<option value="211">Taiwan</option>
+			<option value="212">Tajikistan</option>
+			<option value="213">Tanzania</option>
+			<option value="214">Thailand</option>
+			<option value="215">Timor Leste</option>
+			<option value="216">Togo</option>
+			<option value="217">Tokelau</option>
+			<option value="218">Tonga</option>
+			<option value="219">Trinidad and Tobago</option>
+			<option value="220">Tunisia</option>
+			<option value="221">Turkemenistan</option>
+			<option value="222">Turkey</option>
+			<option value="223">Turks and Caicos Islands</option>
+			<option value="224">Tuvalu</option>
+			<option value="225">Uganda</option>
+			<option value="226">Ukraine</option>
+			<option value="227">United Arab Emirates</option>
+			<option value="228">United Nations</option>
+			<option value="229">United States of America</option>
+			<option value="230">Uruguay</option>
+			<option value="231">US Outlying Islands</option>
+			<option value="232">US Pacific Islands</option>
+			<option value="233">Uzbekistan</option>
+			<option value="234">Vanuatu</option>
+			<option value="235">Vatican City</option>
+			<option value="236">Venezuela</option>
+			<option value="237">Vietnam</option>
+			<option value="238">Virgin Islands, British</option>
+			<option value="239">Virgin Islands, USA</option>
+			<option value="240">Wallis and Futuna</option>
+			<option value="241">Western Sahara</option>
+			<option value="242">Yemen</option>
+			<option value="243">Yugoslavia</option>
+			<option value="244">Zambia</option>
+			<option value="245">Zimbabwe</option>
+
+		</select>
+				</td>
+			</tr>
+			<tr>
+				<td>计划何时出发：</td>
+				<td><input id='expect_go_date' type="text" placeholder="DD/MM/YYYY"/></td>
+			</tr>
+			<tr>
+				<td>曾去过NZ的日期：</td>
+				<td><input id='been_in_date' type="text" placeholder="选填，若没去过，不填"/></td>
+			</tr>
+
+		
+			</table>
+
+		</div>
+		<table style="float:left">
+			<tr>
+				<td>
+					<span id="status"></span>
+				</td>
+				<td>
+					<button id="save" class="save" title="可以使用ctrl+s保存哦~">保存</button>
+				</td>
+			</tr>
+			</table>
+		<div id="right_x" style="">
+		<div style="align-content: center">
+			<div style="margin-top:0px; ">
+			<ul style="text-align: center;min-width: 200px;">
+				我们鼓励各位申请者自己抢名额，同时也提供代抢服务，可以作为双重保障。详情请点击：<a href="http://www.auwhver.com/service" target="_blank">http://www.auwhver.com/service</a><br/>
+				代抢服务使用的并非本插件，而是更快速的全自动POST预约系统以及半自动人工方案。扫一扫加关注，资讯攻略全掌握。<br/>
+			</ul>
+			</div>
+
+			<div style="margin-top:0px;">
+			<ul style="text-align: center;min-width: 200px;">
+				<img src="images/code.png"/>
+			</ul>
+			</div>
+		</div>
+		</div>
+		<div id="support_x" style="height:auto;min-height:450px;"></div>
+	</div>
+
+</div>
+</div>
+
+
+
+<script src="prevent_default.js"></script>
+<script src="jquery-1.7.1.min.js"></script>
+<script src="js/jquery_ui/jquery-ui.min.js"></script>
+<script src="options.js"></script>
+<script src="js/md5/md5.min.js"></script>
+</body>
+</html>
